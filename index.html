@@ -1,201 +1,457 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💍 Yadunandaan ❤️ Maushree Wedding</title>
+<title>Yadunandan ❤️ Manushree H.P Royal Wedding</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#7b1fa2,#e91e63,#ffb300);
-background-size:400% 400%;
-animation:bg 10s infinite alternate;
+height:100vh;
 overflow:hidden;
+background:
+linear-gradient(#21002f,#800020,#ffb347);
 color:white;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-@keyframes bg{
-0%{background-position:left;}
-100%{background-position:right;}
+
+/* cinematic opening */
+
+.intro{
+position:fixed;
+inset:0;
+background:#120018;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+color:#ffd700;
+z-index:10;
+animation:intro 5s forwards;
 }
+
+@keyframes intro{
+0%{opacity:1}
+80%{opacity:1}
+100%{opacity:0;visibility:hidden}
+}
+
 
 .card{
-width:90%;
-max-width:600px;
-margin:40px auto;
-padding:30px;
+
+width:95%;
+max-width:450px;
+padding:25px;
 text-align:center;
-background:rgba(255,255,255,.12);
+
+background:rgba(255,255,255,.15);
 backdrop-filter:blur(15px);
-border-radius:25px;
-box-shadow:0 0 25px rgba(255,255,255,.3);
+
+border-radius:30px;
+
+box-shadow:
+0 0 30px gold;
+
+animation:zoom 2s;
 }
 
-h1{
-font-size:48px;
-color:gold;
-text-shadow:0 0 15px gold;
+
+@keyframes zoom{
+from{
+transform:scale(.2);
 }
+to{
+transform:scale(1);
+}
+}
+
+
+h1{
+font-size:32px;
+color:#ffd700;
+text-shadow:0 0 20px white;
+}
+
 
 h2{
 margin:15px;
 }
 
-p{
-font-size:18px;
-line-height:1.7;
+
+.mandap{
+
+font-size:70px;
+animation:float 3s infinite;
+
 }
 
-#countdown{
-font-size:24px;
-margin:20px;
-font-weight:bold;
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
 }
+}
+
+
+
+/* Avatar */
+
+
+.couple{
+
+display:flex;
+justify-content:center;
+gap:35px;
+margin:20px;
+
+}
+
+
+.avatar{
+
+position:relative;
+
+}
+
+
+.face{
+
+width:85px;
+height:85px;
+
+background:#ffd0a3;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+
+box-shadow:0 0 20px gold;
+
+animation:bounce 3s infinite;
+
+}
+
+
+@keyframes bounce{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+
+
+.bride .dress{
+
+width:100px;
+height:100px;
+
+background:
+linear-gradient(#ff0080,#ffd700);
+
+border-radius:60px 60px 20px 20px;
+
+}
+
+
+
+.groom .dress{
+
+width:100px;
+height:100px;
+
+background:
+linear-gradient(#111,#555);
+
+border-radius:60px 60px 20px 20px;
+
+}
+
+
+
+.crown{
+
+font-size:35px;
+
+}
+
+
+
+/* Fireworks */
+
+
+.fire{
+
+position:absolute;
+
+font-size:35px;
+
+animation:boom 3s infinite;
+
+}
+
+
+@keyframes boom{
+
+0%{
+transform:scale(.2);
+opacity:0;
+}
+
+50%{
+transform:scale(2);
+opacity:1;
+}
+
+100%{
+opacity:0;
+}
+
+}
+
+
+.f1{top:10%;left:10%}
+.f2{top:20%;right:10%}
+.f3{bottom:15%;left:20%}
+.f4{bottom:20%;right:20%}
+
+
+
 
 button{
-padding:15px 35px;
-font-size:20px;
+
+padding:12px 25px;
+
 border:none;
-border-radius:40px;
-background:gold;
-color:#8b0000;
-font-weight:bold;
-cursor:pointer;
+
+border-radius:30px;
+
+background:#ffd700;
+
+font-size:17px;
+
 }
 
-button:hover{
-transform:scale(1.08);
+
+
+#count{
+
+margin:15px;
+
+color:#fff;
+
 }
 
 .heart{
-position:fixed;
-top:-50px;
-color:pink;
-animation:fall linear infinite;
+
+position:absolute;
+
+animation:heart 7s linear infinite;
+
 }
 
-@keyframes fall{
-100%{
-transform:translateY(120vh);
+
+@keyframes heart{
+
+from{
+top:-20px;
 }
+
+to{
+top:100%;
 }
+
+}
+
 </style>
 
 </head>
+
+
 <body>
+
+
+<div class="intro">
+✨ Royal Wedding ✨
+</div>
+
+
+<div class="fire f1">🎆</div>
+<div class="fire f2">🎇</div>
+<div class="fire f3">✨</div>
+<div class="fire f4">🎆</div>
+
+
 
 <div class="card">
 
-<h1>💍</h1>
 
-<h1>Yadunandaan</h1>
+<div class="mandap">
+🛕
+</div>
 
-<h2>❤️ Weds ❤️</h2>
 
-<h1>Maushree</h1>
+<h1>
+💍 Wedding Invitation
+</h1>
 
-<p>
-With the blessings of our beloved families,<br>
-we request the honour of your presence<br>
-to celebrate our wedding ceremony.
-</p>
 
-<h2>📅 14 July 2026</h2>
-<h2>🕙 10:00 AM</h2>
+<div class="couple">
 
-<h2>📍 Wedding Venue</h2>
-<p>Your Venue Name Here</p>
 
-<div id="countdown"></div>
+<div class="avatar bride">
 
-<button onclick="celebrate()">
-🎉 Celebrate 🎉
-</button>
+<div class="crown">👑</div>
 
-<h2 id="wish"></h2>
+<div class="face">
+😊
+</div>
+
+<div class="dress"></div>
 
 </div>
 
-<audio autoplay loop>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+
+
+<div class="avatar groom">
+
+<div class="crown">
+👑
+</div>
+
+<div class="face">
+😊
+</div>
+
+<div class="dress"></div>
+
+</div>
+
+
+</div>
+
+
+
+<h2>
+Yadunandan ❤️ Manushree H.P
+</h2>
+
+
+<p>
+Two souls, one heart and a lifetime of love ✨
+</p>
+
+
+<h3>
+📅 14 July 2026
+</h3>
+
+
+<div id="count">
+Loading...
+</div>
+
+
+
+<button onclick="playMusic()">
+🎵 Play Wedding Music
+</button>
+
+
+<audio id="music" loop>
+<source src="wedding.mp3">
 </audio>
+
+
+
+</div>
+
+
+
 
 <script>
 
-for(let i=0;i<80;i++){
+
+let date =
+new Date("July 14,2026 10:00:00").getTime();
+
+
+setInterval(()=>{
+
+let now=new Date().getTime();
+
+let gap=date-now;
+
+
+let d=Math.floor(gap/(1000*60*60*24));
+
+let h=Math.floor((gap%(1000*60*60*24))/(1000*60*60));
+
+let m=Math.floor((gap%(1000*60*60))/(1000*60));
+
+let s=Math.floor((gap%(1000*60))/1000);
+
+
+
+document.getElementById("count").innerHTML=
+"⏳ "+d+" Days "+h+" Hours "+m+" Minutes "+s+" Seconds";
+
+
+},1000);
+
+
+
+function playMusic(){
+
+document.getElementById("music").play();
+
+}
+
+
+
+// floating hearts
+
+setInterval(()=>{
 
 let h=document.createElement("div");
 
 h.className="heart";
 
-h.innerHTML="🌹";
+h.innerHTML="❤️";
 
-h.style.left=Math.random()*100+"vw";
+h.style.left=Math.random()*100+"%";
 
-h.style.fontSize=(15+Math.random()*20)+"px";
-
-h.style.animationDuration=(5+Math.random()*5)+"s";
+h.style.fontSize=
+20+Math.random()*30+"px";
 
 document.body.appendChild(h);
 
-}
 
-let wedding=new Date("July 14, 2026 10:00:00").getTime();
+setTimeout(()=>{
+h.remove();
+},7000);
 
-setInterval(function(){
 
-let now=new Date().getTime();
+},500);
 
-let d=wedding-now;
 
-let days=Math.floor(d/(1000*60*60*24));
-
-let hrs=Math.floor((d%(1000*60*60*24))/(1000*60*60));
-
-let min=Math.floor((d%(1000*60*60))/(1000*60));
-
-let sec=Math.floor((d%(1000*60))/1000);
-
-document.getElementById("countdown").innerHTML=
-"⏳ "+days+" Days "+hrs+" Hours "+min+" Minutes "+sec+" Seconds";
-
-},1000);
-
-function celebrate(){
-
-document.getElementById("wish").innerHTML=
-"💖 Congratulations Yadunandaan ❤️ Maushree 💖<br>May your married life be filled with love, happiness and endless blessings. 🎊";
-
-for(let i=0;i<200;i++){
-
-let x=document.createElement("div");
-
-x.innerHTML="🎆";
-
-x.style.position="fixed";
-
-x.style.left=Math.random()*100+"vw";
-
-x.style.top=Math.random()*100+"vh";
-
-x.style.fontSize="28px";
-
-document.body.appendChild(x);
-
-setTimeout(()=>x.remove(),2500);
-
-}
-
-}
 
 </script>
+
 
 </body>
 </html>
