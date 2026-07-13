@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💍 Yadunandaan ❤️ Maushree Wedding</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#7b1fa2,#e91e63,#ffb300);
+background-size:400% 400%;
+animation:bg 10s infinite alternate;
+overflow:hidden;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.card{
+width:90%;
+max-width:600px;
+margin:40px auto;
+padding:30px;
+text-align:center;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+border-radius:25px;
+box-shadow:0 0 25px rgba(255,255,255,.3);
+}
+
+h1{
+font-size:48px;
+color:gold;
+text-shadow:0 0 15px gold;
+}
+
+h2{
+margin:15px;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+}
+
+#countdown{
+font-size:24px;
+margin:20px;
+font-weight:bold;
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:40px;
+background:gold;
+color:#8b0000;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.heart{
+position:fixed;
+top:-50px;
+color:pink;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+100%{
+transform:translateY(120vh);
+}
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h1>💍</h1>
+
+<h1>Yadunandaan</h1>
+
+<h2>❤️ Weds ❤️</h2>
+
+<h1>Maushree</h1>
+
+<p>
+With the blessings of our beloved families,<br>
+we request the honour of your presence<br>
+to celebrate our wedding ceremony.
+</p>
+
+<h2>📅 14 July 2026</h2>
+<h2>🕙 10:00 AM</h2>
+
+<h2>📍 Wedding Venue</h2>
+<p>Your Venue Name Here</p>
+
+<div id="countdown"></div>
+
+<button onclick="celebrate()">
+🎉 Celebrate 🎉
+</button>
+
+<h2 id="wish"></h2>
+
+</div>
+
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+for(let i=0;i<80;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="🌹";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(15+Math.random()*20)+"px";
+
+h.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(h);
+
+}
+
+let wedding=new Date("July 14, 2026 10:00:00").getTime();
+
+setInterval(function(){
+
+let now=new Date().getTime();
+
+let d=wedding-now;
+
+let days=Math.floor(d/(1000*60*60*24));
+
+let hrs=Math.floor((d%(1000*60*60*24))/(1000*60*60));
+
+let min=Math.floor((d%(1000*60*60))/(1000*60));
+
+let sec=Math.floor((d%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+"⏳ "+days+" Days "+hrs+" Hours "+min+" Minutes "+sec+" Seconds";
+
+},1000);
+
+function celebrate(){
+
+document.getElementById("wish").innerHTML=
+"💖 Congratulations Yadunandaan ❤️ Maushree 💖<br>May your married life be filled with love, happiness and endless blessings. 🎊";
+
+for(let i=0;i<200;i++){
+
+let x=document.createElement("div");
+
+x.innerHTML="🎆";
+
+x.style.position="fixed";
+
+x.style.left=Math.random()*100+"vw";
+
+x.style.top=Math.random()*100+"vh";
+
+x.style.fontSize="28px";
+
+document.body.appendChild(x);
+
+setTimeout(()=>x.remove(),2500);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
